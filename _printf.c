@@ -25,7 +25,10 @@ int (*get_func(const char *specifier))(va_list)
 		case '%':
 			return (&print_percent);
 		default:
-			return (NULL);
+			{
+				putchar('%');
+				return (NULL);
+			}
 	}
 }
 
