@@ -6,6 +6,13 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+int _putchar(char c);
 int _printf(const char *format, ...);
+int (*get_func(const char specifier))(va_list);
+
+/* Output to stdout */
+int print_percent(va_list);
+int print_string(va_list);
+int print_char(va_list);
 
 #endif /* MAIN_H */
