@@ -14,6 +14,9 @@ int (*get_func(const char specifier))(va_list)
 			return (&print_char);
 		case 's':
 			return (&print_string);
+		case 'i':
+		case 'd':
+			return (&print_int);
 		case '%':
 			return (&print_percent);
 		default:

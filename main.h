@@ -8,6 +8,7 @@
 #include <limits.h>
 
 int _putchar(char c);
+int _puts(char *str);
 int _printf(const char *format, ...);
 int (*get_func(const char specifier))(va_list);
 
@@ -15,5 +16,6 @@ int (*get_func(const char specifier))(va_list);
 int print_percent(va_list);
 int print_string(va_list);
 int print_char(va_list);
+int print_int(va_list);
 
 #endif /* MAIN_H */
