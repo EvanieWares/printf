@@ -9,21 +9,26 @@
 int print_int(va_list args)
 {
 	int i, isNegative = 0, digitCount = 0;
-	int number = va_arg(args, int);
+	unsigned int number;
+	int n = va_arg(args, int);
 	char buffer[10];
 
 	/* Check if the the number is zero and print it */
-	if (number == 0)
+	if (n == 0)
 	{
 		_putchar('0');
 	}
 
 	/* Check if the number is negative and print a negative sign */
-	if (number < 0)
+	if (n < 0)
 	{
 		_putchar('-');
 		isNegative = 1;
-		number = -number;
+		number = -n;
+	}
+	else
+	{
+		number = n;
 	}
 
 	/* Print cast the number to a string */
