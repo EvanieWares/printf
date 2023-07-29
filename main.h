@@ -17,5 +17,6 @@ int print_percent(va_list);
 int print_string(va_list);
 int print_char(va_list);
 int print_int(va_list);
+int print_binary(va_list);
 
 #endif /* MAIN_H */
