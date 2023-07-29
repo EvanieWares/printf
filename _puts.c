@@ -3,14 +3,14 @@
 /**
  * _puts - prints a string to stdout
  * @str: string to print
- * 
+ *
  * Return: the number of characters printed
 */
 int _puts(char *str)
 {
-    int len = 0;
+	int len = 0;
 
-    if (str == NULL)
+	if (str == NULL)
 	{
 		str = "(null)";
 	}
