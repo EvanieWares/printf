@@ -31,9 +31,7 @@ int _printf(const char *format, ...)
 			{
 				return (-1);
 			}
-
 			func = get_func(*format);
-
 			if (func != NULL)
 			{
 				printed += func(args);
@@ -41,9 +39,7 @@ int _printf(const char *format, ...)
 				continue;
 			}
 			else
-			{
 				printed++;
-			}
 		}
 		printed += _putchar(*format);
 		format++;
