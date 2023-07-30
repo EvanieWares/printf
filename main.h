@@ -9,6 +9,8 @@
 
 int _putchar(char c);
 int _puts(char *str);
+char get_hex(int);
+void reverse_string(char *, int);
 int _printf(const char *format, ...);
 int (*get_func(const char specifier))(va_list);
 
@@ -17,6 +19,11 @@ int print_percent(va_list);
 int print_string(va_list);
 int print_char(va_list);
 int print_int(va_list);
+
+/* Print unsigned integers */
 int print_binary(va_list);
+int print_octal(va_list);
+int print_decimal(va_list);
+int print_hex(va_list);
 
 #endif /* MAIN_H */

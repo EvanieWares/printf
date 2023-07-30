@@ -19,6 +19,13 @@ int (*get_func(const char specifier))(va_list)
 			return (&print_int);
 		case 'b':
 			return (&print_binary);
+		case 'o':
+			return (&print_octal);
+		case 'x':
+		case 'X':
+			return (&print_hex);
+		case 'u':
+			return (&print_decimal);
 		case '%':
 			return (&print_percent);
 		default:
