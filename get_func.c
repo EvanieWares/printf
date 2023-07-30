@@ -27,6 +27,8 @@ int (*get_func(const char specifier))(va_list)
 			return (&print_heX);
 		case 'u':
 			return (&print_decimal);
+		case 'S':
+			return (&print_S);
 		case '%':
 			return (&print_percent);
 		default:

@@ -22,6 +22,10 @@ int print_unsigned_int(unsigned int number, int base, char specifier)
 	{
 		return (-1);
 	}
+	if (number < 16 && base == 16 && (specifier == 'x' || specifier == 'X'))
+	{
+		digitCount += _putchar('0');
+	}
 	while (number > 0)
 	{
 		int digit = (number % base);

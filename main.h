@@ -27,5 +27,6 @@ int print_decimal(va_list);
 int print_hex(va_list);
 int print_heX(va_list);
 int print_unsigned_int(unsigned int, int, char);
+int print_S(va_list);
 
 #endif /* MAIN_H */
