@@ -16,7 +16,7 @@ int print_int(va_list args)
 	/* Check if the the number is zero and print it */
 	if (n == 0)
 	{
-		_putchar('0');
+		return (_putchar('0'));
 	}
 
 	/* Check if the number is negative and print a negative sign */
