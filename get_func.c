@@ -22,8 +22,9 @@ int (*get_func(const char specifier))(va_list)
 		case 'o':
 			return (&print_octal);
 		case 'x':
-		case 'X':
 			return (&print_hex);
+		case 'X':
+			return (&print_heX);
 		case 'u':
 			return (&print_decimal);
 		case '%':

@@ -54,27 +54,3 @@ void reverse_string(char *str, int len)
 		str[len - i - 1] = temp;
 	}
 }
-
-/**
- * get_hex - replace numbers greater than 9 with hexadecimal character
- * @n: number to replace
- * Return: corresponding hexadecimal character
- */
-char get_hex(int n)
-{
-	switch (n)
-	{
-		case 10:
-			return ('A');
-		case 11:
-			return ('B');
-		case 12:
-			return ('C');
-		case 13:
-			return ('D');
-		case 14:
-			return ('E');
-		default:
-			return ('F');
-	}
-}
